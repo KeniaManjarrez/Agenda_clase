@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, 
+	maximum-scale=1, minimum-scale=1, width=device-width" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	footer{
+		background: blue;
+
+
+	}
+	h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+#iconos{
+	height: 100px;
+	text-align: center;
+}
+.fecha{
+	background-color: blue;
+	font-size: 20px;
+	font-family: inherit;
+	color: white;
+}
+.fecha1{
+	background-color: gray;
+	font-size: 20px;
+	font-family: inherit;
+	color: white;
+}
+.box {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+.after-box {
+  clear: left;
+}
+.container{
+	margin-left: 45%;
+}
+li{
+	margin-left: 300px;
+
+}
+	</style>
+</head>
+<body>
+	<div data-role="page" id="pageone">
+		<h1><div data-role="header">Home</div></h1>
+		<div role="main" class="ui-content">
+			<div class="container">
+				<div>
+					<img src="public/logo.png">
+				</div>
+				<div class="box">
+				<a href="#pagetwo" class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-notext">AGENDA</a>
+				</div>
+				<div class="box">
+					<a href="#pagethree" class="ui-btn ui-shadow ui-corner-all ui-icon-comment ui-btn-icon-notext">MENSAJES</a>	
+				</div>
+				<div class="box">
+					<a href="#pagethree" class="ui-btn ui-shadow ui-corner-all ui-icon-navigation ui-btn-icon-notext">cONEXION</a>	
+				</div>			
+			</div>
+				
+		</div>					
+		<div data-role="footer"></div>
+	</div>
+
+	<div data-role="page" id="pagetwo" >
+		<h1><div data-role="header">AGENDA</div></h1>
+		<div role="main" class="ui-content">
+			<div class="container2">
+			<ul class="nav nav-tabs" id="nav">
+			  <li><a href="#pageone">HOME</a></li>
+			  <li class="active"><a href="#pagetwo">AGENDA</a></li>
+			  <li><a href="#pagethree">CONEXION</a></li>
+			</ul>
+			<div class="fecha">
+				<script type="text/javascript"> var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"); var f=new Date(); document.write(diasSemana[f.getDay()] + " " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()); </script>
+			</div><br>
+			<div class="fecha1">
+				<p>9:00 am</p>
+			</div><br>
+			<div class="fecha1">
+				<p>10:00 am</p>
+			</div><br>
+			<div class="fecha1">
+				<p>11:00 am</p>
+			</div><br>
+			<div class="fecha1">
+				<p>12:00 am</p>
+			</div><br>
+			</div>	
+		</div>
+		<div data-role="footer"></div>
+	</div>
+
+	<div data-role="page" id="pagethree" >
+		<div data-role="header">Conexion</div>
+		<div role="main" class="ui-content">
+		</div>
+		<div data-role="footer"></div>
+	</div>
+
+
+</body>
+</html>
